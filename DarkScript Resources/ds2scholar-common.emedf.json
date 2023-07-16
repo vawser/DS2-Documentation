@@ -396,7 +396,7 @@
               "unk4": 0
             },
             {
-              "name": "Unknown4",
+              "name": "Bow Distance",
               "type": 6,
               "enum_name": null,
               "default": 0.0,
@@ -1795,7 +1795,7 @@
           ]
 		},
 		{
-          "name": "Unknown Command 100040[06]",
+          "name": "Apply Buff Spell Effect",
           "index": 6,
           "args": []
 		},
@@ -1860,7 +1860,7 @@
       "index": 100050,
       "instrs": [
         {
-          "name": "Call Must Sub Event 85X",
+          "name": "Heal Sub Event",
           "index": 0,
           "args": [
             {
@@ -1936,7 +1936,7 @@
           ]
 		},
 		{
-          "name": "Call Must Sub Event 85X + Unknown 100050[01]",
+          "name": "Heal Sub Event Unknown",
           "index": 1,
           "args": [
             {
@@ -2098,7 +2098,7 @@
       "index": 100070,
       "instrs": [
         {
-          "name": "Call Must Sub Event87X",
+          "name": "Status Sub Event",
           "index": 0,
           "args": [
             {
@@ -2731,13 +2731,13 @@
           "args": []
 		},
 		{
-          "name": "Unknown Command 100110[03]",
+          "name": "Set Death State Info",
           "index": 3,
           "args": [
             {
-              "name": "Unknown1",
+              "name": "Death State Info",
               "type": 0,
-              "enum_name": null,
+              "enum_name": "Death State Info",
               "default": 0,
               "min": 0,
               "max": 255,
@@ -3350,17 +3350,17 @@
           ]
 		},
 		{
-          "name": "Unknown Command 100130[02]",
+          "name": "Set State Info Category",
           "index": 2,
           "args": [
             {
-              "name": "Unknown1",
+              "name": "State Info Category",
               "type": 5,
-              "enum_name": null,
+              "enum_name": "State Info Category",
               "default": 0,
               "min": 0,
-              "max": 1000000000,
-              "increment": 1,
+              "max": 0,
+              "increment": 0,
               "format_string": "%d",
               "unk1": 0,
               "unk2": 0,
@@ -3446,7 +3446,7 @@
           ]
 		},
 		{
-          "name": "Unknown Command 100130[04]",
+          "name": "Spawn Buff SFX",
           "index": 4,
           "args": [
             {
@@ -4360,15 +4360,15 @@
         "8": "Max Stamina",
         "9": "Equip Load",
         "11": "Thrust Counterattack Damage Rate",
-        "12": "Unknown (12)",
-        "13": "Unknown (13)",
-        "14": "Unknown (14)",
-        "15": "Unknown (15)",
-        "16": "Unknown (16)",
-        "17": "Unknown (17)",
-        "18": "Unknown (18)",
-        "19": "Unknown (19)",
-        "20": "Unknown (20)",
+        "12": "Physical Absorption",
+        "13": "Magic Absorption",
+        "14": "Lightning Absorption",
+        "15": "Fire Absorption",
+        "16": "Dark Absorption",
+        "17": "Poison Absorption",
+        "18": "Bleed Absorption",
+        "19": "Curse Absorption",
+        "20": "Petrify Absorption",
         "22": "Weapon Degredation Rate",
         "23": "Armor Degradation Rate",
         "24": "Ring Degradation Rate",
@@ -4376,7 +4376,7 @@
         "26": "Incoming Damage Rate",
         "27": "Outgoing Physical Damage Rate",
         "28": "Incoming Physical Damage Rate",
-        "29": "Unknown (29)",
+        "29": "Max HP In Hollow State",
         "30": "Soul Gain Rate",
         "39": "Weapon Stability",
         "46": "Unknown (46)",
@@ -4399,31 +4399,31 @@
     {
       "name": "State Info Type",
       "values": {
-        "0": "Unknown (0)",
-        "1": "Unknown (1)",
+        "0": "Prevent Stagger From Headshots",
+        "1": "Prevent Critical Hits",
         "2": "Unknown (2)",
         "3": "Unknown (3)",
-        "4": "Unknown (4)",
-        "6": "Unknown (6)",
-        "10": "Unknown (10)",
-        "15": "Unknown (15)",
-        "17": "Unknown (17)",
-        "18": "Unknown (18)",
+        "4": "Chance For Critical Attack",
+        "6": "Human Form When Hollow",
+        "10": "Silence Footstep Sound",
+        "15": "Enemies Attack Hostile Intruders",
+        "17": "Hide Left Weapon",
+        "18": "Hide Right Weapon",
         "19": "Unknown (19)",
-        "22": "Unknown (22)",
+        "22": "Boost Item Discovery",
         "23": "Unknown (23)",
-        "24": "Unknown (24)",
+        "24": "Return To Bonfire",
         "25": "Unknown (25)",
         "27": "Unknown (27)",
         "28": "Unknown (28)",
-        "29": "Unknown (29)",
-        "31": "Unknown (31)",
+        "29": "Prevent Damage From Headshots",
+        "31": "Hide Player When Rolling",
         "33": "Unknown (33)",
         "34": "Unknown (34)",
         "39": "Unknown (39)",
         "40": "Unknown (40)",
         "41": "Unknown (41)",
-        "42": "Unknown (42)",
+        "42": "Immunity to Curse",
         "43": "Unknown (43)",
         "44": "Unknown (44)",
         "46": "Unknown (46)",
@@ -4436,10 +4436,40 @@
         "55": "Unknown (55)",
         "56": "Unknown (56)",
         "57": "Unknown (57)",
-        "58": "Unknown (58)",
-        "59": "Unknown (59)",
+        "58": "Prevent Hollowing",
+        "59": "Prevent Soul Gain",
         "60": "Unknown (60)",
         "61": "Unknown (61)"
+      }
+	},
+    {
+      "name": "State Info Category",
+      "values": {
+        "10": "Stamina Recovery",
+        "20": "Defense",
+        "30": "Resist",
+        "40": "Damage",
+        "60": "Low HP",
+        "70": "Poise",
+        "80": "Hollowing State",
+        "90": "Item Discovery",
+        "100": "Soul Gain",
+        "110": "HP Absorb",
+        "120": "HP Restoration",
+        "130": "Falling Damage",
+        "140": "Target Priority",
+        "150": "Max HP",
+        "160": "Spell",
+        "170": "Ammunition",
+        "180": "Explosion",
+        "310": "Soul Acquisition"
+      }
+	},
+    {
+      "name": "Death State Info",
+      "values": {
+        "0": "Prevent Hollowing",
+        "1": "Petrification Immunity"
       }
 	},
     {
@@ -4463,7 +4493,7 @@
 		"18": "Unknown (18)",
 		"19": "Unknown (19)",
 		"20": "Unknown (20)",
-		"21": "Unknown (21)",
+		"21": "Wetness",
 		"22": "Unknown (22)",
 		"23": "Unknown (23)",
 		"25": "Unknown (25)",
