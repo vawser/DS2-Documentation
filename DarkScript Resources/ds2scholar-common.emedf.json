@@ -1707,7 +1707,7 @@
           ]
 		},
 		{
-          "name": "Unknown Command 100040[02]",
+          "name": "HP Restoration Effect",
           "index": 2,
           "args": [
             {
@@ -2867,7 +2867,7 @@
           ]
 		},
 		{
-          "name": "Unknown Command 100120[01]",
+          "name": "Create Bullets For Dead Again",
           "index": 1,
           "args": [
             {
@@ -3301,7 +3301,7 @@
           ]
 		},
 		{
-          "name": "Call Must Sub Event 93X",
+          "name": "Soul Sub Event",
           "index": 1,
           "args": [
             {
@@ -4351,7 +4351,7 @@
       "values": {
         "0": "Poison Buildup",
         "1": "Bleed Buildup",
-        "2": "Unknown (2)",
+        "2": "Toxic Buildup",
         "3": "Curse Buildup",
         "4": "Ignite Buildup",
         "5": "Unknown (5)",
@@ -4412,7 +4412,7 @@
         "19": "Unknown (19)",
         "22": "Boost Item Discovery",
         "23": "Unknown (23)",
-        "24": "Return To Bonfire",
+        "24": "Become Invulnerable",
         "25": "Unknown (25)",
         "27": "Unknown (27)",
         "28": "Unknown (28)",
